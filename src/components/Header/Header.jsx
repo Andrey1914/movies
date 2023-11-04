@@ -14,6 +14,7 @@ import { HeaderSection } from "../SectionStyled";
 import { HeaderContainer } from "../ContainerStyled";
 import MobileMenu from "./MobileMenu";
 import MovieIconLogo from "../../images/logo-movie.png";
+import SwitchTheme from "../SwitchTheme/SwitchTheme";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +29,10 @@ export default function Header() {
           <NavigationLink to="/">
             <LogoContainer>
               <Logo src={MovieIconLogo} alt="logo" />
-              <LogoText>Filmoteka</LogoText>
+              <LogoText>Cinema</LogoText>
             </LogoContainer>
           </NavigationLink>
+          <SwitchTheme />
           <NavigationList>
             <NavigationItem>
               <NavigationLink to="/">Home</NavigationLink>

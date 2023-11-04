@@ -22,7 +22,8 @@ export const InfoCardHeader = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
+
   font-size: 0.8rem;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
 
@@ -32,7 +33,8 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.h3`
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
+
   font-size: 0.6rem;
   font-weight: ${({ theme }) => theme.fontWeights.normal};
 
@@ -42,7 +44,8 @@ export const SubTitle = styled.h3`
 `;
 
 export const DateRelease = styled.p`
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
+
   font-size: 0.6rem;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   margin-bottom: 0.5rem;
@@ -54,6 +57,8 @@ export const DateRelease = styled.p`
 `;
 
 export const Date = styled.p`
+  color: var(--text);
+
   font-weight: ${({ theme }) => theme.fontWeights.normal};
   font-size: 0.6rem;
   margin-bottom: 0.5rem;
@@ -65,7 +70,8 @@ export const Date = styled.p`
 `;
 
 export const Overview = styled.p`
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
+
   font-size: 0.6rem;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   margin-bottom: 0.5rem;
@@ -77,6 +83,8 @@ export const Overview = styled.p`
 `;
 
 export const OverviewText = styled.p`
+  color: var(--text);
+
   font-weight: ${({ theme }) => theme.fontWeights.normal};
   font-size: 0.6rem;
   margin-bottom: 0.5rem;
@@ -88,7 +96,8 @@ export const OverviewText = styled.p`
 `;
 
 export const Genres = styled.p`
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
+
   font-size: 0.6rem;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   margin-bottom: 0.5rem;
@@ -100,6 +109,8 @@ export const Genres = styled.p`
 `;
 
 export const GenresText = styled.p`
+  color: var(--text);
+
   font-weight: ${({ theme }) => theme.fontWeights.normal};
   font-size: 0.6rem;
   margin-bottom: 1.5rem;
@@ -139,6 +150,8 @@ export const AditionalText = styled.p`
 `;
 
 export const CastReviewsList = styled.ul`
+  color: var(--text);
+
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -160,7 +173,8 @@ export const Item = styled.li`
 export const StyledLink = styled(NavLink)`
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
+
   font-size: 0.6rem;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   transform: scale(1);

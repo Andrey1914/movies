@@ -1,7 +1,20 @@
-import { css } from "styled-components";
+import { createGlobalStyle } from "styled-components";
+
 import "modern-normalize";
 
-export const GlobalStyles = css`
+export const GlobalStyles = createGlobalStyle`
+  [data-theme='dark'] {
+    --bg: #5d5d5d;
+    --bg-item: #333333;
+    --text: #fff;
+    --toggle: #f5ff32;
+  }
+  [data-theme='light'] {
+    --bg: #fff;
+    --text: #000;
+    --toggle:#aaaaaa;
+    
+  }
   html {
     box-sizing: border-box;
     width: 100vw;

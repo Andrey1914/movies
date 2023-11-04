@@ -43,6 +43,7 @@ export const Photo = styled.img`
 export const ActorNameContainer = styled.div`
   flex-grow: 1;
   padding: 0.6rem;
+  background-color: var(--bg-item);
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     padding: 1rem;
@@ -52,7 +53,7 @@ export const ActorNameContainer = styled.div`
 export const ActorName = styled.h3`
   font-size: 0.6rem;
   font-weight: ${({ theme }) => theme.fontWeights.normal};
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     font-size: 1rem;

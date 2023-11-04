@@ -17,7 +17,7 @@ export const ReviewsList = styled.ul`
 `;
 
 export const Item = styled.li`
-  border: 1px solid #282828d1;
+  border: 1px solid var(--text);
   padding: 1rem;
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     width: calc(100% / 2 - 2rem);
@@ -27,7 +27,7 @@ export const Item = styled.li`
 export const Author = styled.p`
   font-size: 0.6rem;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
   @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 1.1rem;
   }
@@ -37,7 +37,7 @@ export const Author = styled.p`
 `;
 
 export const ReviewContent = styled.span`
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
   font-weight: ${({ theme }) => theme.fontWeights.normal};
   font-size: 0.6rem;
   @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
@@ -49,8 +49,10 @@ export const ReviewContent = styled.span`
 `;
 
 export const NoReviewText = styled.p`
+  background-color: var(--bg);
   border-top: 0.2rem solid #57576f;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
+  color: var(--text);
   font-size: 1.5rem;
   text-align: center;
   padding: 2rem;

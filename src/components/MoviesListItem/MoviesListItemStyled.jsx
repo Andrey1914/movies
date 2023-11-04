@@ -39,6 +39,7 @@ export const CardDescription = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem;
+  background-color: var(--bg-item);
 `;
 
 export const Image = styled.img`
@@ -48,7 +49,8 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h2`
-  color: ${({ theme }) => theme.color.dark};
+  color: var(--text);
+
   font-weight: ${({ theme }) => theme.fontWeights.bold};
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.xs}) {
@@ -62,7 +64,7 @@ export const Title = styled.h2`
 
 export const Vote = styled.p`
   font-weight: ${({ theme }) => theme.fontWeights.normal};
-  color: ${({ theme }) => theme.color.darkGray};
+  color: var(--text);
   margin-left: 1rem;
   flex: none;
 

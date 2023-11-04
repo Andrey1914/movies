@@ -12,6 +12,8 @@ export const FooterSection = styled.footer`
 
 export const Section = styled.section`
   padding: 1.5rem 0;
+  background-color: var(--bg);
+
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     padding: 2rem 0;
   }
