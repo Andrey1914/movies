@@ -61,8 +61,13 @@ export const ActorName = styled.h3`
 `;
 
 export const NoInformationText = styled.p`
+  border-top: 0.2rem solid #333333;
+  background-color: var(--bg);
+  color: var(--text);
+  height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem;
+  font-size: 1.5rem;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
 `;

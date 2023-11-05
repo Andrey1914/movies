@@ -4,6 +4,7 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 export const Image = styled.img`
   margin-bottom: 1rem;
+  border-radius: ${({ theme }) => theme.radii.normal};
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     width: calc(50% - 1rem);
@@ -154,14 +155,14 @@ export const CastReviewsList = styled.ul`
 
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 1.5rem;
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    gap: 0.6rem;
+    gap: 1.2rem;
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 `;
 
@@ -182,8 +183,8 @@ export const StyledLink = styled(NavLink)`
 
   :hover,
   :focus {
-    color: ${({ theme }) => theme.color.orange};
-    transform: scale(1.2);
+    color: ${({ theme }) => theme.color.link};
+    transform: scale(1.02);
     opacity: 0.8;
   }
 

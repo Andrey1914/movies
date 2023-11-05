@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const HeaderSection = styled.header`
+  position: absolute;
+  width: 100%;
   padding: 1.5rem 0;
-  background: linear-gradient(45deg, #595974, #232424);
+
+  background: linear-gradient(to bottom, #232424, rgba(89, 89, 116, 0.3));
 `;
 
 export const FooterSection = styled.footer`
-  padding: 1rem 0;
-  background: linear-gradient(45deg, #595974, #232424);
+  padding: 2rem 0;
+
+  background-color: #232424;
 `;
 
 export const Section = styled.section`

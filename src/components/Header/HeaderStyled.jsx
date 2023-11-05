@@ -14,7 +14,7 @@ export const LogoContainer = styled.div`
 `;
 
 export const LogoText = styled.span`
-  font-weight: ${({ theme }) => theme.fontWeights.normal};
+  font-weight: ${({ theme }) => theme.fontWeights.thin};
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
     display: none;
   }
@@ -41,7 +41,7 @@ export const NavigationItem = styled.li`
   transition: transform 250ms ease-in-out;
   :hover,
   :focus {
-    transform: scale(1.2);
+    transform: scale(1.03);
   }
 `;
 export const NavigationLink = styled(NavLink)`
@@ -53,8 +53,9 @@ export const NavigationLink = styled(NavLink)`
 
   :hover,
   :focus {
-    transform: scale(1.2);
-    color: ${({ theme }) => theme.color.orange};
+    transform: scale(1.03);
+    color: ${({ theme }) => theme.color.link};
+    text-shadow: ${({ theme }) => theme.shadow.text};
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {

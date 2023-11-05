@@ -28,6 +28,6 @@ export default function ReviewsPage() {
   return reviews && reviews.length > 0 ? (
     <Reviews reviews={reviews} />
   ) : (
-    <NoReviewText>We have no reviews here yet.</NoReviewText>
+    <NoReviewText>Sorry, we have no reviews here yet.</NoReviewText>
   );
 }

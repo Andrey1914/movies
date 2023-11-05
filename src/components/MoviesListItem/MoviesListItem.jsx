@@ -18,17 +18,16 @@ export default function MoviesListItem({ id, title, poster, vote }) {
         state={{ from: location.pathname + location.search }}
       >
         <CardStyled>
-          <CardDescription>
-            <Title>{title ? title : "No title"}</Title>
-            <Vote>Vote: {vote}</Vote>
-          </CardDescription>
-
           <Image
             src={
               poster ? `https://image.tmdb.org/t/p/w500/${poster}` : "No Poster"
             }
             alt={title}
           />
+          <CardDescription>
+            <Title>{title ? title : "No title"}</Title>
+            <Vote>Vote: {vote}</Vote>
+          </CardDescription>
         </CardStyled>
       </Link>
     </Card>

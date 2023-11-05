@@ -8,7 +8,7 @@ export const Card = styled.li`
 
   :hover,
   :focus {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--shadow);
 
     transform: scale(0.98);
     cursor: zoom-in;
@@ -40,11 +40,13 @@ export const CardDescription = styled.div`
   align-items: center;
   padding: 0.7rem;
   background-color: var(--bg-item);
+  border-bottom-left-radius: ${({ theme }) => theme.radii.normal};
+  border-bottom-right-radius: ${({ theme }) => theme.radii.normal};
 `;
 
 export const Image = styled.img`
-  border-bottom-left-radius: ${({ theme }) => theme.radii.normal};
-  border-bottom-right-radius: ${({ theme }) => theme.radii.normal};
+  border-top-left-radius: ${({ theme }) => theme.radii.normal};
+  border-top-right-radius: ${({ theme }) => theme.radii.normal};
   object-fit: cover;
 `;
 

@@ -8,12 +8,13 @@ export const GlobalStyles = createGlobalStyle`
     --bg-item: #333333;
     --text: #fff;
     --toggle: #f5ff32;
+    --shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px,  rgba(255, 255, 255, 0.22) 0px 10px 10px;
   }
   [data-theme='light'] {
     --bg: #fff;
     --text: #000;
     --toggle:#aaaaaa;
-    
+    --shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   html {
     box-sizing: border-box;

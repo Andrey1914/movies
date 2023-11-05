@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { Section } from "../../components/SectionStyled";
+
+export const SectionForm = styled(Section)`
+  height: 100vh;
+`;
 
 export const Form = styled.form`
   margin: auto;
@@ -9,6 +14,7 @@ export const Form = styled.form`
 `;
 
 export const Button = styled.button`
+  color: var(--text);
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -24,11 +30,16 @@ export const Button = styled.button`
 `;
 
 export const Input = styled.input`
+  ::placeholder {
+    color: var(--text);
+  }
   width: 300px;
   height: 25px;
   font-size: 20px;
   border: none;
-  border-bottom: 0.5px solid #00000073;
+  background-color: transparent;
+  border-bottom: 0.5px solid var(--text);
+  color: var(--text);
   font: inherit;
   font-size: inherit;
   outline: none;

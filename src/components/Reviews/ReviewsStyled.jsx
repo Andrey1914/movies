@@ -50,7 +50,8 @@ export const ReviewContent = styled.span`
 
 export const NoReviewText = styled.p`
   background-color: var(--bg);
-  border-top: 0.2rem solid #57576f;
+  height: 100vh;
+  border-top: 0.2rem solid #333333;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   color: var(--text);
   font-size: 1.5rem;

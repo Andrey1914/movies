@@ -12,8 +12,8 @@ export const GoBackBtn = styled.button`
   transition: all 250ms;
   :hover,
   :focus {
-    color: ${({ theme }) => theme.color.orange};
-    transform: scale(0.92);
+    color: ${({ theme }) => theme.color.link};
+    transform: scale(0.98);
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.xs}) {
