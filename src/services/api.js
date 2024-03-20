@@ -10,6 +10,7 @@ export async function fetchMoviesBySearch(query) {
 
 export async function fetchTrendingMovies() {
   const trendingURL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}&page=${1}`;
+  // `${BASE_URL}/trending/movie/week?api_key=${API_KEY}`;
   return await axios.get(`${trendingURL}`).then((res) => res.data);
 }
 
@@ -26,4 +27,10 @@ export async function fetchMovieCast(movieId) {
 export async function fetchMoviesReviews(movieId) {
   const reviewsURL = `${BASE_URL}/movie/${movieId}/reviews?api_key=${API_KEY}&language=en-US&page=1`;
   return await axios.get(`${reviewsURL}`).then((response) => response.data);
+}
+
+export async function fetchMovieTrailer(movieId) {
+  const trailerURL = `${BASE_URL}/movie/${movieId}/videos?api_key=${API_KEY}`;
+  console.log(trailerURL);
+  return await axios.get(`${trailerURL}`).then((response) => response.data);
 }

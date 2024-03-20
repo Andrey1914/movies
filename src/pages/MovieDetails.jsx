@@ -10,6 +10,7 @@ export default function MovieDetailsPage() {
   useEffect(() => {
     fetchMovieDetails(movieId).then(
       ({
+        id,
         original_title,
         genres,
         overview,
@@ -18,6 +19,7 @@ export default function MovieDetailsPage() {
         vote_average,
       }) => {
         const movieDetails = {
+          id: id,
           title: original_title,
           genres: genres,
           overview: overview,

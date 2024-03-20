@@ -2,6 +2,18 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
+export const MovieInfoSection = styled.section`
+  padding: 6.5rem 0;
+  background-color: var(--bg);
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 7rem 0;
+  }
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    padding: 8rem 0;
+  }
+`;
+
 export const Image = styled.img`
   margin-bottom: 1rem;
   border-radius: ${({ theme }) => theme.radii.normal};
@@ -122,7 +134,16 @@ export const GenresText = styled.p`
   }
 `;
 
-export const BoxButton = styled.div``;
+export const BoxButton = styled.div`
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    width: 220px;
+  }
+`;
 
 export const AditionalInformationContainer = styled.div`
   background: linear-gradient(45deg, #42425d, #232424);

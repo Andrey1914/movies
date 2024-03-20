@@ -21,6 +21,7 @@ export const theme = {
   shadow: {
     text: "3px 0px 7px rgba(219, 246, 253, 0.8), -3px 0px 7px rgba(180, 200, 220, 0.8), 0px 4px 7px rgba(165, 178, 188, 0.8);",
   },
+  spacing: [0, 4, 8, 16, 32, 64, 128, 256, 300],
   space: [0, 2, 4, 8, 16, 20, 32, 64, 128, 152, 256, 320, 512],
 
   fonts: {

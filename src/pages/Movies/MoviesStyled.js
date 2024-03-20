@@ -3,6 +3,15 @@ import { Section } from "../../components/SectionStyled";
 
 export const SectionForm = styled(Section)`
   height: 100vh;
+  padding: 6.5rem 0;
+  background-color: var(--bg);
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 7rem 0;
+  }
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    padding: 8rem 0;
+  }
 `;
 
 export const Form = styled.form`

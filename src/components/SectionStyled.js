@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderSection = styled.header`
+  z-index: 1;
   position: absolute;
   width: 100%;
   padding: 1.5rem 0;

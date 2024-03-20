@@ -13,7 +13,8 @@ export const GlobalStyles = createGlobalStyle`
   [data-theme='light'] {
     --bg: #fff;
     --text: #000;
-    --toggle:#aaaaaa;
+    --toggle: #ffffff;
+    /* #aaaaaa; */
     --shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   html {

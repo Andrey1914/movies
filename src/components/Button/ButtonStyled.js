@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { MdOutlineArrowBackIosNew } from "react-icons/md";
 
-export const GoBackBtn = styled.button`
+export const ButtonStyled = styled.button`
   display: flex;
+  justify-content: center;
   background: linear-gradient(45deg, #42425d, #232424);
   color: ${({ theme }) => theme.color.light};
   border: ${({ theme }) => theme.borders.none};
@@ -25,7 +25,4 @@ export const GoBackBtn = styled.button`
     padding: 0.7rem 1.5rem;
     font-size: 1.2rem;
   }
-`;
-export const ArrowBack = styled(MdOutlineArrowBackIosNew)`
-  margin-right: 0.5rem;
 `;
