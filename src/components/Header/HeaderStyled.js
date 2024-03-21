@@ -14,15 +14,19 @@ export const LogoContainer = styled.div`
 `;
 
 export const LogoText = styled.span`
-  font-weight: ${({ theme }) => theme.fontWeights.thin};
-  @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
-    display: none;
+  display: none;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    display: block;
+    font-weight: ${({ theme }) => theme.fontWeights.thin};
   }
 `;
 
 export const NavigationContainer = styled.nav`
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const NavigationList = styled.ul`
@@ -70,9 +74,9 @@ export const Menu = styled.div`
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     display: block;
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    top: 0;
+    top: 0; */
   }
 `;
 

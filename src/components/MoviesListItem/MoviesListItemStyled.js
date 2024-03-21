@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.li`
-  max-width: 100%;
+  width: calc(50% - 0.25rem);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: ${({ theme }) => theme.radii.normal};
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -15,15 +15,15 @@ export const Card = styled.li`
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-    max-width: calc(100% / 2 - 0.5rem);
+    max-width: calc(50% - 0.1rem);
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    max-width: calc(100% / 3 - 0.67rem);
+    max-width: calc(100% / 3 - 0.34rem);
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    max-width: calc(100% / 4 - 0.76rem);
+    max-width: calc(100% / 4 - 0.38rem);
   }
 `;
 
@@ -42,6 +42,14 @@ export const CardDescription = styled.div`
   background-color: var(--bg-item);
   border-bottom-left-radius: ${({ theme }) => theme.radii.normal};
   border-bottom-right-radius: ${({ theme }) => theme.radii.normal};
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 1.3rem 0.7rem;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    padding: 1.3rem;
+  }
 `;
 
 export const Image = styled.img`

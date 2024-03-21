@@ -28,7 +28,10 @@ export default function Header() {
         <NavigationContainer>
           <NavigationLink to="/">
             <LogoContainer>
-              <Logo src={MovieIconLogo} alt="logo" />
+              <Logo
+                src={MovieIconLogo}
+                alt="the-site-logo-looks-like-a-piece-of-film"
+              />
               <LogoText>Cinema</LogoText>
             </LogoContainer>
           </NavigationLink>
@@ -38,15 +41,16 @@ export default function Header() {
               <NavigationLink to="/">Home</NavigationLink>
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink to="/movies">Movies</NavigationLink>
+              <NavigationLink to="/movies">Search</NavigationLink>
             </NavigationItem>
           </NavigationList>
+          <Menu onClick={toggle}>
+            <Line width="1.5rem" />
+            <Line />
+            <Line width="1.5rem" ml="0.5rem" />
+          </Menu>
         </NavigationContainer>
-        <Menu onClick={toggle}>
-          <Line width="1.5rem" />
-          <Line />
-          <Line width="1.5rem" ml="0.5rem" />
-        </Menu>
+
         <MobileMenu isOpen={isOpen} toggle={toggle}></MobileMenu>
       </HeaderContainer>
     </HeaderSection>

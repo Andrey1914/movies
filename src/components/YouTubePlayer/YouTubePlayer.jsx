@@ -10,8 +10,8 @@ export default function YouTubePlayer({ trailerData }) {
       {trailerData && trailerData.length !== 0 ? (
         <ReactPlayer
           controls
-          height="400px"
-          width="640px"
+          height="100%"
+          width="100%"
           url={`https://www.youtube.com/embed/${trailerData.results[0].key}`}
         />
       ) : (

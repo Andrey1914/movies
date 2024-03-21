@@ -35,7 +35,7 @@ export default function Footer() {
             <NavigationLink to="/">Home</NavigationLink>
           </NavigationItem>
           <NavigationItem>
-            <NavigationLink to="/movies">Movies</NavigationLink>
+            <NavigationLink to="/movies">Search</NavigationLink>
           </NavigationItem>
         </FooterNavList>
         <SocialsLinks>

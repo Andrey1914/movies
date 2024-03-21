@@ -16,7 +16,22 @@ export const HeroStyled = styled.div`
 `;
 
 export const HeroTextWrap = styled.div`
-  padding: 100px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(39, 40, 40, 0.8),
+    rgb(44, 44, 53, 0)
+  );
+
+  padding: 0 30px;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 0 100px;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    padding: 0 300px;
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -24,11 +39,29 @@ export const HeroTitle = styled.h1`
   color: #fff;
   font-weight: 400;
   font-size: 32px;
+  line-height: 1.5;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    font-size: 34px;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    font-size: 42px;
+  }
 `;
 
 export const HeroText = styled.p`
   padding-right: 100px;
   color: #fff;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.5;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    font-size: 24px;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    font-size: 26px;
+  }
 `;

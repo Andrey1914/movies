@@ -15,13 +15,27 @@ export const ModalContent = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 400px;
-  max-width: fit-content;
-  width: 100%;
-  padding: 12px;
-  background-color: white;
+  height: 200px;
+  width: 340px;
+  padding: 5px;
+  background-color: #aaa;
   border-radius: 4px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition: transform 300ms linear;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    width: 445px;
+    height: 258px;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    width: 600px;
+    height: 344px;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    width: 850px;
+    height: 485px;
+  }
 `;
