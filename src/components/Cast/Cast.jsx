@@ -31,10 +31,10 @@ export default function Cast({ cast }) {
                     ) : (
                       <Photo src={placeholder} alt={name} width="100%" />
                     )}
-                    <ActorNameContainer>
-                      <ActorName>{name}</ActorName>
-                    </ActorNameContainer>
                   </ActorContainer>
+                  <ActorNameContainer>
+                    <ActorName>{name}</ActorName>
+                  </ActorNameContainer>
                 </Item>
               ))}
             </CastsList>

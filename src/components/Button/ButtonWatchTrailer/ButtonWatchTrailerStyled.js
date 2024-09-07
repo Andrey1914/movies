@@ -7,5 +7,8 @@ export const YouTubeButton = styled(ButtonStyled)`
 `;
 
 export const YouTubeIcon = styled(FaYoutube)`
+  font-size: ${({ theme }) => theme.fontSizes.s};
+  width: 20px;
+  height: 20px;
   margin-right: 0.5rem;
 `;

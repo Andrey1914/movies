@@ -26,16 +26,19 @@ export default function Header() {
     <HeaderSection>
       <HeaderContainer>
         <NavigationContainer>
-          <NavigationLink to="/">
-            <LogoContainer>
-              <Logo
-                src={MovieIconLogo}
-                alt="the-site-logo-looks-like-a-piece-of-film"
-              />
-              <LogoText>Cinema</LogoText>
-            </LogoContainer>
-          </NavigationLink>
-          <SwitchTheme />
+          <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
+            <NavigationLink to="/">
+              <LogoContainer>
+                <Logo
+                  src={MovieIconLogo}
+                  alt="the-site-logo-looks-like-a-piece-of-film"
+                />
+                <LogoText>Cinema</LogoText>
+              </LogoContainer>
+            </NavigationLink>
+            <SwitchTheme />
+          </div>
+
           <NavigationList>
             <NavigationItem>
               <NavigationLink to="/">Home</NavigationLink>

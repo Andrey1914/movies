@@ -7,18 +7,15 @@ export const ButtonStyled = styled.button`
   color: ${({ theme }) => theme.color.light};
   border: ${({ theme }) => theme.borders.none};
   border-radius: ${({ theme }) => theme.radii.normal};
-  font-weight: ${({ theme }) => theme.fontWeights.thin};
+  font-size: ${({ theme }) => theme.fontSizes.m};
+  padding: 0.5rem 0.8rem;
+  font-weight: ${({ theme }) => theme.fontWeights.normal};
   transform: scale(1);
   transition: all 250ms;
   :hover,
   :focus {
     color: ${({ theme }) => theme.color.link};
     transform: scale(0.98);
-  }
-
-  @media all and (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-    padding: 0.5rem 1rem;
-    font-size: 0.6rem;
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {

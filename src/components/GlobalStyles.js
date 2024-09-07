@@ -5,7 +5,8 @@ import "modern-normalize";
 export const GlobalStyles = createGlobalStyle`
   [data-theme='dark'] {
     --bg: #5d5d5d;
-    --bg-item: #333333;
+    /* --bg-item: #333333; */
+    --bg-item: rgba(51, 51, 51, 0.85);
     --text: #fff;
     --toggle: #f5ff32;
     --shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px,  rgba(255, 255, 255, 0.22) 0px 10px 10px;

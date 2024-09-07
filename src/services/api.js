@@ -8,9 +8,8 @@ export async function fetchMoviesBySearch(query) {
   return await axios.get(`${url}`).then((res) => res.data);
 }
 
-export async function fetchTrendingMovies() {
-  const trendingURL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}&page=${1}`;
-  // `${BASE_URL}/trending/movie/week?api_key=${API_KEY}`;
+export async function fetchTrendingMovies(page = 1) {
+  const trendingURL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}&page=${page}`;
   return await axios.get(`${trendingURL}`).then((res) => res.data);
 }
 
