@@ -30,6 +30,19 @@ export async function fetchMoviesReviews(movieId) {
 
 export async function fetchMovieTrailer(movieId) {
   const trailerURL = `${BASE_URL}/movie/${movieId}/videos?api_key=${API_KEY}`;
-  console.log(trailerURL);
   return await axios.get(`${trailerURL}`).then((response) => response.data);
+}
+
+// TV
+
+export async function fetchTrendingTVShows(page = 1) {
+  const trendingTVURL = `${BASE_URL}/trending/tv/day?api_key=${API_KEY}&page=${page}`;
+  return await axios.get(`${trendingTVURL}`).then((res) => res.data);
+}
+
+export async function fetchTVShowsDetails(tvShowsId) {
+  const tvShowsdetailsURL = `${BASE_URL}/tv/${tvShowsId}?api_key=${API_KEY}&language=en-US`;
+  return await axios
+    .get(`${tvShowsdetailsURL}`)
+    .then((response) => response.data);
 }

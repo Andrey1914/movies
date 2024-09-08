@@ -44,6 +44,9 @@ export default function Header() {
               <NavigationLink to="/">Home</NavigationLink>
             </NavigationItem>
             <NavigationItem>
+              <NavigationLink to="/tvshows">TV</NavigationLink>
+            </NavigationItem>
+            <NavigationItem>
               <NavigationLink to="/movies">Search</NavigationLink>
             </NavigationItem>
           </NavigationList>

@@ -8,33 +8,19 @@ import { fetchTrendingMovies } from "../../services/api";
 import Pagination from "../Pagination/Pagination";
 
 export default function MoviesList() {
-  const [movies, setMovies] = useState([]); // Массив с фильмами
-  const [currentPage, setCurrentPage] = useState(1); // Текущая страница
-  const [totalPages, setTotalPages] = useState(0); // Общее количество страниц
+  const [movies, setMovies] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(0);
 
-  // Функция загрузки фильмов для текущей страницы
   useEffect(() => {
     const loadMovies = async () => {
       const data = await fetchTrendingMovies(currentPage);
-      setMovies(data.results); // Сохраняем фильмы
-      setTotalPages(data.total_pages); // Устанавливаем общее количество страниц
+      setMovies(data.results);
+      setTotalPages(data.total_pages);
     };
 
     loadMovies();
   }, [currentPage]);
-
-  // Обработчики для кнопок
-  // const handleNextPage = () => {
-  //   if (currentPage < totalPages) {
-  //     setCurrentPage(currentPage + 1);
-  //   }
-  // };
-
-  // const handlePreviousPage = () => {
-  //   if (currentPage > 1) {
-  //     setCurrentPage(currentPage - 1);
-  //   }
-  // };
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
