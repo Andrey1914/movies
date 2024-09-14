@@ -4,7 +4,6 @@ import {
   SocialsLinks,
   SocialLink,
   Copyright,
-  SvgGit,
   SvgLi,
   SvgTe,
   SvgWh,
@@ -39,13 +38,6 @@ export default function Footer() {
           </NavigationItem>
         </FooterNavList>
         <SocialsLinks>
-          <SocialLink
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Andrey1914"
-          >
-            <SvgGit />
-          </SocialLink>
           <SocialLink
             target="_blank"
             rel="noopener noreferrer"

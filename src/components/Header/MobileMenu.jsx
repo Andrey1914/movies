@@ -14,7 +14,6 @@ import MovieIconLogo from "../../images/logo-movie.png";
 import {
   SocialLink,
   SocialsLinks,
-  SvgGit,
   SvgLi,
   SvgTe,
   SvgWh,
@@ -43,6 +42,9 @@ export default function MobileMenu({ isOpen, toggle }) {
         <MobileMenuLink to="/" onClick={toggle}>
           Home
         </MobileMenuLink>
+        <MobileMenuLink to="/tvshows" onClick={toggle}>
+          TV
+        </MobileMenuLink>
         <MobileMenuLink to="/movies" onClick={toggle}>
           Search
         </MobileMenuLink>
@@ -51,13 +53,6 @@ export default function MobileMenu({ isOpen, toggle }) {
 
       <MobileFooter>
         <SocialsLinks>
-          <SocialLink
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Andrey1914"
-          >
-            <SvgGit />
-          </SocialLink>
           <SocialLink
             target="_blank"
             rel="noopener noreferrer"

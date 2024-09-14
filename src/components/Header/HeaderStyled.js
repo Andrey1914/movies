@@ -3,9 +3,13 @@ import { Link as NavLink } from "react-router-dom";
 
 export const Logo = styled.img`
   transition: opacity 250ms;
-  margin-right: 1rem;
+
   color: ${({ theme }) => theme.color.light};
   height: 3rem;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    margin-right: 1rem;
+  }
 `;
 
 export const LogoContainer = styled.div`

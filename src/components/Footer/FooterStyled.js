@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BsGithub, BsLinkedin, BsTelegram, BsWhatsapp } from "react-icons/bs";
+import { BsLinkedin, BsTelegram, BsWhatsapp } from "react-icons/bs";
 import { NavigationList } from "../Header/HeaderStyled";
 
 export const FooterContainer = styled.div`
@@ -51,22 +51,6 @@ export const Copyright = styled.div`
   @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     font-size: 1.5rem;
     font-weight: ${({ theme }) => theme.fontWeights.thin};
-  }
-`;
-
-export const SvgGit = styled(BsGithub)`
-  width: 1rem;
-  height: 1rem;
-  transform: scale(1);
-  transition: all 250ms;
-  :hover,
-  :focus {
-    opacity: 0.8;
-    transform: scale(1.02);
-  }
-  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    width: 2rem;
-    height: 2rem;
   }
 `;
 
